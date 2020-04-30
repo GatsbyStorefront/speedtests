@@ -1,0 +1,15 @@
+{
+  "name": "gatsbystorefront-speedtests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pavel Ivanov",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "easytimer.js": "^4.1.1",
+    "jquery": "^3.5.0",
+    "puppeteer": "^3.0.1"
+  },
+  "scripts": {
+    "test": "node index.js"
+  }
+}

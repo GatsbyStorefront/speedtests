@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/easytimer.js/dist/easytimer.min.js"></script>
+  </head>
+  <body style="background-color: rgb(53, 54, 58);">
+    <div id="secondTenthsExample">
+      <center>
+        <div class="values" style="font-size: 150px; color: whitesmoke;"></div>
+      </center>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var timer = new easytimer.Timer();
+    timer.start({ precision: 'secondTenths' });
+    timer.addEventListener('secondTenthsUpdated', function (e) {
+      $('#secondTenthsExample .values').html(
+        timer.getTimeValues().toString(['minutes', 'seconds', 'secondTenths'])
+      );
+    });
+  </script>
+</html>

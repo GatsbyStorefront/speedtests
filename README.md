@@ -7,3 +7,7 @@ Usage:
 ```bash
 $ yarn test
 ```
+
+## Video demo
+
+[<img src="https://img.youtube.com/vi/B7CXzx9jQeM/maxresdefault.jpg" width="90%">](https://youtu.be/B7CXzx9jQeM)
